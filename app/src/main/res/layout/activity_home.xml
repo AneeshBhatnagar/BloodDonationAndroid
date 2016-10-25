@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.aneesh.blooddonation.Home">
+
+    <TextView
+        android:id="@+id/home_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Welcome, Aneesh"
+        android:textSize="22dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/home_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/home_welcome"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="30dp"
+        android:text="View Profile"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/home_nearest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/home_profile"
+        android:layout_marginBottom="15dp"
+        android:text="Find Nearest Blood Bank"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/home_request"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/home_nearest"
+        android:layout_marginBottom="15dp"
+        android:text="Request Blood"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/home_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/home_request"
+        android:layout_marginBottom="15dp"
+        android:text="Logout"
+        android:textSize="18dp" />
+
+</RelativeLayout>

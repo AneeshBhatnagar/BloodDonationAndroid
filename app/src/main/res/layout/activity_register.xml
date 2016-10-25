@@ -1,0 +1,160 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    tools:context="com.aneesh.blooddonation.Register">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:id="@+id/register_fnameh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Enter your First Name" />
+
+        <EditText
+            android:id="@+id/register_fname"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/register_fnameh" />
+
+        <TextView
+            android:id="@+id/register_lnameh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/register_fname"
+            android:layout_marginTop="15dp"
+            android:text="Enter your Last Name" />
+
+        <EditText
+            android:id="@+id/register_lname"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/register_lnameh" />
+
+        <TextView
+            android:id="@+id/register_emailh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/register_lname"
+            android:layout_marginTop="15dp"
+            android:text="Enter your Email Address" />
+
+        <EditText
+            android:id="@+id/register_email"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/register_emailh"
+            android:inputType="textEmailAddress" />
+
+        <TextView
+            android:id="@+id/register_passh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/register_email"
+            android:layout_marginTop="15dp"
+            android:text="Enter Password" />
+
+        <EditText
+            android:id="@+id/register_pass"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/register_passh"
+            android:inputType="textPassword" />
+
+        <TextView
+            android:id="@+id/register_pass2h"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/register_pass"
+            android:layout_marginTop="15dp"
+            android:text="Confirm your Password" />
+
+        <EditText
+            android:id="@+id/register_pass2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/register_pass2h"
+            android:inputType="textPassword" />
+
+        <TextView
+            android:id="@+id/register_phoneh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/register_pass2"
+            android:layout_marginTop="15dp"
+            android:text="Enter your Phone Number" />
+
+        <EditText
+            android:id="@+id/register_phone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/register_phoneh"
+            android:inputType="phone" />
+
+        <TextView
+            android:id="@+id/register_cityh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/register_phone"
+            android:layout_marginTop="15dp"
+            android:text="Enter your City" />
+
+        <EditText
+            android:id="@+id/register_city"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/register_cityh" />
+
+        <TextView
+            android:id="@+id/register_bloodh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/register_city"
+            android:layout_marginTop="15dp"
+            android:text="Enter your Blood Group" />
+
+        <EditText
+            android:id="@+id/register_blood"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/register_bloodh" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/register_notifall"
+            android:text="Notification for all blood groups?"
+            android:layout_below="@id/register_blood"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/register_phonevi"
+            android:text="Phone number visible to others?"
+            android:layout_below="@id/register_notifall"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/register_emailalerts"
+            android:text="Send Email Notifications?"
+            android:layout_below="@id/register_phonevi"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/register_submit"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/register_emailalerts"
+            android:text="Register Now"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+</ScrollView>
